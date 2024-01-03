@@ -35,10 +35,10 @@ function App() {
       <h1>chai aur reat</h1>
       <h2>Counter Value: {count}</h2>
 
-      <button onClick={addValue}>Add</button>
+      <button onClick={addValue} >Add {count}</button>
       <br />
       <br />
-      <button onClick={removeValue}>Remove</button>
+      <button onClick={removeValue}>Remove </button>
     </>
   );
 }
