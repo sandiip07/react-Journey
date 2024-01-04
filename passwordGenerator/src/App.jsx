@@ -30,7 +30,7 @@ function App() {
 
   const copyToClipBoard = useCallback(() => {
     passwordRef.current?.select();
-    passwordRef.current?.setSelectionRange(0,5);
+    passwordRef.current?.setSelectionRange(0,8);
     window.navigator.clipboard.writeText(password);
   }, [password]);
 
@@ -59,7 +59,7 @@ function App() {
           </button>
         </div>
         <div className="text-sm flex gap-x-2">
-          <div className="flex items-center gap-x-1">
+          <div className="flex items-center gap-x-1 ">
             <input
               type="range"
               min={5}
@@ -74,6 +74,7 @@ function App() {
           </div>
           <div className="flex items-center gap-x-1">
             <input
+             
               type="checkBox"
               defaultChecked={numberAllowed}
               onClick={() => {
